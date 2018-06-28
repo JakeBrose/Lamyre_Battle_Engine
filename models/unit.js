@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     PWS: DataTypes.INTEGER,
     Arm: DataTypes.INTEGER,
     Cost: DataTypes.INTEGER
-  }, {});
+  }, {timestamps: false, tableName: units});
   Units.associate = function(models) {
     // associations can be defined here
   };
